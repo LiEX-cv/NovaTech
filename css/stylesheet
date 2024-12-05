@@ -1,0 +1,290 @@
+ /* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    background-image: url('file:///C:/Users/Charles/Desktop/SchoolStuff/ICT/images/NewsiteEntrance.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    backdrop-filter: blur(50);
+}
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+.pad {
+    padding: 10px;
+    overflow: hidden;
+}   
+.bar {
+    background-color:rgba(29,30,50,0.9);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+.logo {
+    height: 70px;
+    width: auto;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+.bar h3 {
+    margin: 0;
+    padding: 0px;
+}
+
+/*navigation*/ 
+.nav {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+.nav a {
+    float: right;
+    display: flex;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.nav a:hover {
+    background-color: rgba(143,154,164, 0.5);
+    color: white;
+}
+
+/*sections*/ /*divide each page*/
+.section {
+    height: 100vh;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    position: relative; /* To position pseudo-elements */
+    background-color: white; /* Fallback background color */
+    z-index: 1; /* Keeps the content on top of the background */
+    overflow: hidden; /* Ensures the background stays within the section */
+}
+.section::before {
+    content: ""; /* Generates a pseudo-element */
+    position: absolute; /* Positioned relative to the section */
+    top: 0;
+    right: 50%; /* Ensures only the right side of the image is visible */
+    width: 100%; /* Covers the entire section width */
+    height: 100%; /* Covers the entire section height */
+    background-image: url('C:/Users/Charles/Desktop/SchoolStuff/ICT/images/NovaTech/NovaTech Symbol.png');
+    background-size: 80%;
+    background-position: right;
+    opacity: 0.2; 
+    z-index: -1;
+    pointer-events: none;
+}
+#intro::before {
+    opacity: 1; 
+}
+.section:nth-child(odd) {
+    background-color: rgba(48,57,69,0.9);
+    border-radius: 1% ;
+    color: white;
+}
+.section:nth-child(even) {
+    background-color: rgba(143,154,164,0.9);
+    border-radius: 1% ;
+    color: black;
+}
+.section h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 3vw;
+    padding: 10px;
+    text-align: center;
+}
+.section p {
+    line-height: 7vh;
+    font-size: 1.5vw;
+    padding-left: 5vh;  
+}
+@media (max-width: 768px) {
+    .section h1 {
+        font-size: 6vw; 
+    }
+
+    .section p {
+        font-size: 3vw;
+        line-height: 5vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .section h1 {
+        font-size: 7vw;
+    }
+
+    .section p {
+        font-size: 4vw; 
+        line-height: 4vh;
+        padding-left: 3vh;
+    }
+}
+/* Page 1 welcome page */
+#intro {
+    text-align: center;
+    text-decoration: none;
+    padding-top: 35vh;
+    padding-left: 90vh;
+}
+#intro h1 {
+    font-size: 9vh;
+}
+#intro p {
+    font-size: 5vh;
+}
+#intro img:hover {
+    transform: scale(1.3);
+}
+
+/* Page 2 overview */
+#About {
+    text-indent: 5vh;
+}
+#About p {
+    font-size: 4vh;
+}
+/* Page 3-8 technologies */
+#Technologies {
+    padding-top: 20px;
+}
+#t1statement, #t1solution, #t2statement, #t2solution, #t3statement, #t3solution h2{
+    font-size: 2.5vh;
+    padding-top: 20px;
+}   
+#Technologies h3 {
+    font-size: 4vh;
+    margin-left: 300px;
+    padding-top: 20px;
+}
+#t1statement, #t2statement, #t3statement p {
+    text-indent: 5vh;
+}
+#Technologies p {
+    margin-left: 400px;
+    font-size: 3vh;
+}
+/* Page 9 members */
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 150px;
+}
+.box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(143,154,164, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+.box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.members p {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+    margin-bottom: 5px;
+    line-height: 20px;
+    text-align: left;
+}
+.members a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+}
+.members a:hover {
+    text-decoration: underline;
+}
+.image {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* choice */
+.row {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 100px;
+    position: relative;
+    width: 500px;
+    height: auto;
+    border: 10px solid rgba(143,154,164,0.9);
+    border-radius: 10px 10px 10px 10px; 
+    overflow: hidden;
+}
+.image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay p {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+.container:hover .overlay p {
+    opacity: 1;
+}
+a {
+    text-decoration: none;
+}
+.row p {
+    margin-left: -80px;
+    font-size: 50px;
+}
