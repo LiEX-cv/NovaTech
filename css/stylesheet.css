@@ -64,18 +64,18 @@ html {
     margin-top: 20px;
     margin-bottom: 10px;
     padding: 10px;
-    position: relative; /* To position pseudo-elements */
-    background-color: white; /* Fallback background color */
-    z-index: 1; /* Keeps the content on top of the background */
-    overflow: hidden; /* Ensures the background stays within the section */
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
 }
 .section::before {
-    content: ""; /* Generates a pseudo-element */
-    position: absolute; /* Positioned relative to the section */
+    content: "";
+    position: absolute;
     top: 0;
-    right: 50%; /* Ensures only the right side of the image is visible */
-    width: 100%; /* Covers the entire section width */
-    height: 100%; /* Covers the entire section height */
+    right: 50%;
+    width: 100%;
+    height: 100%;
     background-image: url('C:/Users/Charles/Desktop/SchoolStuff/ICT/images/NovaTech/NovaTech Symbol.png');
     background-size: 80%;
     background-position: right;
