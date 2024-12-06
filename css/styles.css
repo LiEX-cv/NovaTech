@@ -5,7 +5,7 @@
     box-sizing: border-box; 
 }
 body {
-    background-image: url("NovaTech/media/NewsiteEntrance.jpg");
+    background-image: url("../media/NewsiteEntrance.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
