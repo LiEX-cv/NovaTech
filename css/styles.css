@@ -76,7 +76,7 @@ html {
     right: 50%;
     width: 100%;
     height: 100%;
-    background-image: url("media/nova/NovaTech NoBG.png");
+    background-image: url('media/nova/NovaTech NoBG.png');
     background-size: 80%;
     background-position: right;
     opacity: 0.2; 
